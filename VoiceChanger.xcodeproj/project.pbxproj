@@ -1,0 +1,1007 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11E6E2A3EC490683091AC864 /* Pods_VoiceChangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40ACF7E34BEBA9BE71195159 /* Pods_VoiceChangerTests.framework */; };
+		5A5B2E1924BC472D003EAEFB /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E1824BC472D003EAEFB /* PlayerView.swift */; };
+		5A5B2E1D24BC4787003EAEFB /* PlayerContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E1C24BC4787003EAEFB /* PlayerContract.swift */; };
+		5A5B2E2124BC508D003EAEFB /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E1F24BC508D003EAEFB /* FilterCollectionViewCell.swift */; };
+		5A5B2E2224BC508D003EAEFB /* FilterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5B2E2024BC508D003EAEFB /* FilterCollectionViewCell.xib */; };
+		5A5B2E2424BC5720003EAEFB /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E2324BC5720003EAEFB /* FilterItem.swift */; };
+		5A5B2E2624BC585D003EAEFB /* FilterViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E2524BC585D003EAEFB /* FilterViewManager.swift */; };
+		5A5B2E2B24BC6208003EAEFB /* SnappingCollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E2A24BC6208003EAEFB /* SnappingCollectionViewDelegateFlowLayout.swift */; };
+		5A5B2E2D24BC6256003EAEFB /* UICollectionViewCell+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E2C24BC6256003EAEFB /* UICollectionViewCell+Nib.swift */; };
+		5A5B2E3024BCB4C7003EAEFB /* ApplyFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E2F24BCB4C7003EAEFB /* ApplyFilter.swift */; };
+		5A5B2E3324BCB614003EAEFB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E3224BCB614003EAEFB /* Constants.swift */; };
+		5A5B2E3524BCB664003EAEFB /* MergeAudioAndVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E3424BCB664003EAEFB /* MergeAudioAndVideo.swift */; };
+		5A5B2E3724BCB720003EAEFB /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E3624BCB720003EAEFB /* UseCase.swift */; };
+		5A5B2E3924BCB745003EAEFB /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E3824BCB745003EAEFB /* DomainError.swift */; };
+		5A5B2E3B24BCB7D1003EAEFB /* SaveAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E3A24BCB7D1003EAEFB /* SaveAsset.swift */; };
+		5A5B2E3D24BCB827003EAEFB /* RemoveAudioFileFromVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E3C24BCB827003EAEFB /* RemoveAudioFileFromVideo.swift */; };
+		5A5B2E3F24BCB8A6003EAEFB /* CopyVideoAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E3E24BCB8A6003EAEFB /* CopyVideoAsset.swift */; };
+		5A5B2E4124BCBC33003EAEFB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E4024BCBC33003EAEFB /* Utils.swift */; };
+		5A5B2E4324BCBC96003EAEFB /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5B2E4224BCBC96003EAEFB /* VideoManager.swift */; };
+		5AA1514C24BBD1C80059B10A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1514B24BBD1C80059B10A /* AppDelegate.swift */; };
+		5AA1514E24BBD1C80059B10A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1514D24BBD1C80059B10A /* SceneDelegate.swift */; };
+		5AA1515024BBD1C80059B10A /* VideoRecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1514F24BBD1C80059B10A /* VideoRecorderViewController.swift */; };
+		5AA1515324BBD1C80059B10A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1515124BBD1C80059B10A /* Main.storyboard */; };
+		5AA1515524BBD1CB0059B10A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1515424BBD1CB0059B10A /* Assets.xcassets */; };
+		5AA1515824BBD1CB0059B10A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1515624BBD1CB0059B10A /* LaunchScreen.storyboard */; };
+		5AA1516324BBD1CB0059B10A /* VoiceChangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1516224BBD1CB0059B10A /* VoiceChangerTests.swift */; };
+		5AA1516E24BBD1CB0059B10A /* VoiceChangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1516D24BBD1CB0059B10A /* VoiceChangerUITests.swift */; };
+		5AA1518424BBE6380059B10A /* PermisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1518224BBE6380059B10A /* PermisionViewController.swift */; };
+		5AA1518524BBE6380059B10A /* PermisionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1518324BBE6380059B10A /* PermisionViewController.xib */; };
+		5AA1518824BBE6AE0059B10A /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1518724BBE6AE0059B10A /* UIViewController+Storyboard.swift */; };
+		5AA1518A24BBE6E10059B10A /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1518924BBE6E10059B10A /* Storyboards.swift */; };
+		5AA1518C24BBE96A0059B10A /* Permissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1518B24BBE96A0059B10A /* Permissions.swift */; };
+		5AA1518F24BC057E0059B10A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1518E24BC057E0059B10A /* ProgressView.swift */; };
+		5AA1519124BC34720059B10A /* AVAsset+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1519024BC34720059B10A /* AVAsset+Audio.swift */; };
+		5AA1519324BC38D40059B10A /* UIView+Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1519224BC38D40059B10A /* UIView+Anchor.swift */; };
+		5AA1519824BC3AD40059B10A /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA1519624BC3AD40059B10A /* ResultViewController.swift */; };
+		5AA1519924BC3AD40059B10A /* ResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AA1519724BC3AD40059B10A /* ResultViewController.xib */; };
+		9A70223A2F3D7A674BBA737C /* Pods_VoiceChanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B6A2E02F8E20C270E9D81C /* Pods_VoiceChanger.framework */; };
+		A2F6C69EFE0128273E1F8927 /* Pods_VoiceChanger_VoiceChangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F2E874AE2BB3A225494C92 /* Pods_VoiceChanger_VoiceChangerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5AA1515F24BBD1CB0059B10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AA1514024BBD1C80059B10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA1514724BBD1C80059B10A;
+			remoteInfo = VoiceChanger;
+		};
+		5AA1516A24BBD1CB0059B10A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5AA1514024BBD1C80059B10A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AA1514724BBD1C80059B10A;
+			remoteInfo = VoiceChanger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2767460FFA5E5FEC177F2D7C /* Pods-VoiceChangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceChangerTests.debug.xcconfig"; path = "Target Support Files/Pods-VoiceChangerTests/Pods-VoiceChangerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40ACF7E34BEBA9BE71195159 /* Pods_VoiceChangerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceChangerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B6A2E02F8E20C270E9D81C /* Pods_VoiceChanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceChanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		594C9149DAE40749BFBD77B9 /* Pods-VoiceChanger-VoiceChangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceChanger-VoiceChangerUITests.debug.xcconfig"; path = "Target Support Files/Pods-VoiceChanger-VoiceChangerUITests/Pods-VoiceChanger-VoiceChangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A5B2E1824BC472D003EAEFB /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		5A5B2E1C24BC4787003EAEFB /* PlayerContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerContract.swift; sourceTree = "<group>"; };
+		5A5B2E1F24BC508D003EAEFB /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		5A5B2E2024BC508D003EAEFB /* FilterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterCollectionViewCell.xib; sourceTree = "<group>"; };
+		5A5B2E2324BC5720003EAEFB /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
+		5A5B2E2524BC585D003EAEFB /* FilterViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewManager.swift; sourceTree = "<group>"; };
+		5A5B2E2A24BC6208003EAEFB /* SnappingCollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappingCollectionViewDelegateFlowLayout.swift; sourceTree = "<group>"; };
+		5A5B2E2C24BC6256003EAEFB /* UICollectionViewCell+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Nib.swift"; sourceTree = "<group>"; };
+		5A5B2E2F24BCB4C7003EAEFB /* ApplyFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyFilter.swift; sourceTree = "<group>"; };
+		5A5B2E3224BCB614003EAEFB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5A5B2E3424BCB664003EAEFB /* MergeAudioAndVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeAudioAndVideo.swift; sourceTree = "<group>"; };
+		5A5B2E3624BCB720003EAEFB /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
+		5A5B2E3824BCB745003EAEFB /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		5A5B2E3A24BCB7D1003EAEFB /* SaveAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveAsset.swift; sourceTree = "<group>"; };
+		5A5B2E3C24BCB827003EAEFB /* RemoveAudioFileFromVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveAudioFileFromVideo.swift; sourceTree = "<group>"; };
+		5A5B2E3E24BCB8A6003EAEFB /* CopyVideoAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyVideoAsset.swift; sourceTree = "<group>"; };
+		5A5B2E4024BCBC33003EAEFB /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5A5B2E4224BCBC96003EAEFB /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
+		5AA1514824BBD1C80059B10A /* VoiceChanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceChanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA1514B24BBD1C80059B10A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5AA1514D24BBD1C80059B10A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5AA1514F24BBD1C80059B10A /* VideoRecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorderViewController.swift; sourceTree = "<group>"; };
+		5AA1515224BBD1C80059B10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5AA1515424BBD1CB0059B10A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5AA1515724BBD1CB0059B10A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5AA1515924BBD1CB0059B10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA1515E24BBD1CB0059B10A /* VoiceChangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceChangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA1516224BBD1CB0059B10A /* VoiceChangerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChangerTests.swift; sourceTree = "<group>"; };
+		5AA1516424BBD1CB0059B10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA1516924BBD1CB0059B10A /* VoiceChangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceChangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AA1516D24BBD1CB0059B10A /* VoiceChangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceChangerUITests.swift; sourceTree = "<group>"; };
+		5AA1516F24BBD1CB0059B10A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AA1518224BBE6380059B10A /* PermisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermisionViewController.swift; sourceTree = "<group>"; };
+		5AA1518324BBE6380059B10A /* PermisionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermisionViewController.xib; sourceTree = "<group>"; };
+		5AA1518724BBE6AE0059B10A /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		5AA1518924BBE6E10059B10A /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		5AA1518B24BBE96A0059B10A /* Permissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permissions.swift; sourceTree = "<group>"; };
+		5AA1518E24BC057E0059B10A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		5AA1519024BC34720059B10A /* AVAsset+Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAsset+Audio.swift"; sourceTree = "<group>"; };
+		5AA1519224BC38D40059B10A /* UIView+Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchor.swift"; sourceTree = "<group>"; };
+		5AA1519624BC3AD40059B10A /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		5AA1519724BC3AD40059B10A /* ResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultViewController.xib; sourceTree = "<group>"; };
+		920D45001A0C6C3D8E3FDF73 /* Pods-VoiceChangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceChangerTests.release.xcconfig"; path = "Target Support Files/Pods-VoiceChangerTests/Pods-VoiceChangerTests.release.xcconfig"; sourceTree = "<group>"; };
+		94807F0EF6C827DBBE0D6AAD /* Pods-VoiceChanger-VoiceChangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceChanger-VoiceChangerUITests.release.xcconfig"; path = "Target Support Files/Pods-VoiceChanger-VoiceChangerUITests/Pods-VoiceChanger-VoiceChangerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BB3A37609AB3F7874E2FB3AF /* Pods-VoiceChanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceChanger.release.xcconfig"; path = "Target Support Files/Pods-VoiceChanger/Pods-VoiceChanger.release.xcconfig"; sourceTree = "<group>"; };
+		D4F2E874AE2BB3A225494C92 /* Pods_VoiceChanger_VoiceChangerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VoiceChanger_VoiceChangerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F05D424A2076D5DC7EDB8329 /* Pods-VoiceChanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VoiceChanger.debug.xcconfig"; path = "Target Support Files/Pods-VoiceChanger/Pods-VoiceChanger.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5AA1514524BBD1C80059B10A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A70223A2F3D7A674BBA737C /* Pods_VoiceChanger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1515B24BBD1CB0059B10A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11E6E2A3EC490683091AC864 /* Pods_VoiceChangerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1516624BBD1CB0059B10A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F6C69EFE0128273E1F8927 /* Pods_VoiceChanger_VoiceChangerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A5B2E1A24BC4733003EAEFB /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B2E1C24BC4787003EAEFB /* PlayerContract.swift */,
+				5A5B2E1824BC472D003EAEFB /* PlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		5A5B2E1B24BC473D003EAEFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1519624BC3AD40059B10A /* ResultViewController.swift */,
+				5AA1519724BC3AD40059B10A /* ResultViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A5B2E1E24BC5076003EAEFB /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B2E2924BC5994003EAEFB /* Model */,
+				5A5B2E2E24BCB4B7003EAEFB /* Classes */,
+				5A5B2E2724BC597E003EAEFB /* ViewManager */,
+				5A5B2E2824BC5988003EAEFB /* Cells */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		5A5B2E2724BC597E003EAEFB /* ViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B2E2524BC585D003EAEFB /* FilterViewManager.swift */,
+				5A5B2E2A24BC6208003EAEFB /* SnappingCollectionViewDelegateFlowLayout.swift */,
+			);
+			path = ViewManager;
+			sourceTree = "<group>";
+		};
+		5A5B2E2824BC5988003EAEFB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B2E1F24BC508D003EAEFB /* FilterCollectionViewCell.swift */,
+				5A5B2E2024BC508D003EAEFB /* FilterCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5A5B2E2924BC5994003EAEFB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B2E2324BC5720003EAEFB /* FilterItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A5B2E2E24BCB4B7003EAEFB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B2E3824BCB745003EAEFB /* DomainError.swift */,
+				5A5B2E3624BCB720003EAEFB /* UseCase.swift */,
+				5A5B2E3E24BCB8A6003EAEFB /* CopyVideoAsset.swift */,
+				5A5B2E2F24BCB4C7003EAEFB /* ApplyFilter.swift */,
+				5A5B2E3424BCB664003EAEFB /* MergeAudioAndVideo.swift */,
+				5A5B2E3A24BCB7D1003EAEFB /* SaveAsset.swift */,
+				5A5B2E3C24BCB827003EAEFB /* RemoveAudioFileFromVideo.swift */,
+				5A5B2E4224BCBC96003EAEFB /* VideoManager.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5A5B2E3124BCB60A003EAEFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B2E3224BCB614003EAEFB /* Constants.swift */,
+				5A5B2E4024BCBC33003EAEFB /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5AA1513F24BBD1C80059B10A = {
+			isa = PBXGroup;
+			children = (
+				5AA1514A24BBD1C80059B10A /* VoiceChanger */,
+				5AA1516124BBD1CB0059B10A /* VoiceChangerTests */,
+				5AA1516C24BBD1CB0059B10A /* VoiceChangerUITests */,
+				5AA1514924BBD1C80059B10A /* Products */,
+				9224206DBF0A768ACD1B5974 /* Pods */,
+				950F10A5D8189D8330DBB426 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5AA1514924BBD1C80059B10A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1514824BBD1C80059B10A /* VoiceChanger.app */,
+				5AA1515E24BBD1CB0059B10A /* VoiceChangerTests.xctest */,
+				5AA1516924BBD1CB0059B10A /* VoiceChangerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AA1514A24BBD1C80059B10A /* VoiceChanger */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1517B24BBD2280059B10A /* App */,
+				5A5B2E3124BCB60A003EAEFB /* Utils */,
+				5AA1518624BBE6460059B10A /* Extensions */,
+				5AA1517D24BBD2440059B10A /* UI */,
+				5AA1517C24BBD2330059B10A /* Resources */,
+			);
+			path = VoiceChanger;
+			sourceTree = "<group>";
+		};
+		5AA1516124BBD1CB0059B10A /* VoiceChangerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1516224BBD1CB0059B10A /* VoiceChangerTests.swift */,
+				5AA1516424BBD1CB0059B10A /* Info.plist */,
+			);
+			path = VoiceChangerTests;
+			sourceTree = "<group>";
+		};
+		5AA1516C24BBD1CB0059B10A /* VoiceChangerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1516D24BBD1CB0059B10A /* VoiceChangerUITests.swift */,
+				5AA1516F24BBD1CB0059B10A /* Info.plist */,
+			);
+			path = VoiceChangerUITests;
+			sourceTree = "<group>";
+		};
+		5AA1517B24BBD2280059B10A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1514B24BBD1C80059B10A /* AppDelegate.swift */,
+				5AA1514D24BBD1C80059B10A /* SceneDelegate.swift */,
+				5AA1518924BBE6E10059B10A /* Storyboards.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5AA1517C24BBD2330059B10A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1515424BBD1CB0059B10A /* Assets.xcassets */,
+				5AA1515624BBD1CB0059B10A /* LaunchScreen.storyboard */,
+				5AA1515924BBD1CB0059B10A /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5AA1517D24BBD2440059B10A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1517E24BBD2570059B10A /* MainScreen */,
+				5AA1518124BBE5EA0059B10A /* Permisions */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5AA1517E24BBD2570059B10A /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1515124BBD1C80059B10A /* Main.storyboard */,
+				5AA1518024BBD2810059B10A /* Camera */,
+				5AA1519524BC3AB60059B10A /* Result */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		5AA1518024BBD2810059B10A /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1518D24BC052E0059B10A /* Components */,
+				5AA1519424BC3A490059B10A /* Controller */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		5AA1518124BBE5EA0059B10A /* Permisions */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1518B24BBE96A0059B10A /* Permissions.swift */,
+				5AA1518224BBE6380059B10A /* PermisionViewController.swift */,
+				5AA1518324BBE6380059B10A /* PermisionViewController.xib */,
+			);
+			path = Permisions;
+			sourceTree = "<group>";
+		};
+		5AA1518624BBE6460059B10A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1518724BBE6AE0059B10A /* UIViewController+Storyboard.swift */,
+				5A5B2E2C24BC6256003EAEFB /* UICollectionViewCell+Nib.swift */,
+				5AA1519224BC38D40059B10A /* UIView+Anchor.swift */,
+				5AA1519024BC34720059B10A /* AVAsset+Audio.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5AA1518D24BC052E0059B10A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1518E24BC057E0059B10A /* ProgressView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5AA1519424BC3A490059B10A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5AA1514F24BBD1C80059B10A /* VideoRecorderViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5AA1519524BC3AB60059B10A /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				5A5B2E1A24BC4733003EAEFB /* Player */,
+				5A5B2E1E24BC5076003EAEFB /* Filter */,
+				5A5B2E1B24BC473D003EAEFB /* Controller */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		9224206DBF0A768ACD1B5974 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F05D424A2076D5DC7EDB8329 /* Pods-VoiceChanger.debug.xcconfig */,
+				BB3A37609AB3F7874E2FB3AF /* Pods-VoiceChanger.release.xcconfig */,
+				594C9149DAE40749BFBD77B9 /* Pods-VoiceChanger-VoiceChangerUITests.debug.xcconfig */,
+				94807F0EF6C827DBBE0D6AAD /* Pods-VoiceChanger-VoiceChangerUITests.release.xcconfig */,
+				2767460FFA5E5FEC177F2D7C /* Pods-VoiceChangerTests.debug.xcconfig */,
+				920D45001A0C6C3D8E3FDF73 /* Pods-VoiceChangerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		950F10A5D8189D8330DBB426 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45B6A2E02F8E20C270E9D81C /* Pods_VoiceChanger.framework */,
+				D4F2E874AE2BB3A225494C92 /* Pods_VoiceChanger_VoiceChangerUITests.framework */,
+				40ACF7E34BEBA9BE71195159 /* Pods_VoiceChangerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5AA1514724BBD1C80059B10A /* VoiceChanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA1517224BBD1CB0059B10A /* Build configuration list for PBXNativeTarget "VoiceChanger" */;
+			buildPhases = (
+				23E4C8250BC0FD3D854497E0 /* [CP] Check Pods Manifest.lock */,
+				5AA1514424BBD1C80059B10A /* Sources */,
+				5AA1514524BBD1C80059B10A /* Frameworks */,
+				5AA1514624BBD1C80059B10A /* Resources */,
+				2A50AA2457B4691942B03B0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceChanger;
+			productName = VoiceChanger;
+			productReference = 5AA1514824BBD1C80059B10A /* VoiceChanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5AA1515D24BBD1CB0059B10A /* VoiceChangerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA1517524BBD1CB0059B10A /* Build configuration list for PBXNativeTarget "VoiceChangerTests" */;
+			buildPhases = (
+				BE8D3BEF378A309BD9A92D9E /* [CP] Check Pods Manifest.lock */,
+				5AA1515A24BBD1CB0059B10A /* Sources */,
+				5AA1515B24BBD1CB0059B10A /* Frameworks */,
+				5AA1515C24BBD1CB0059B10A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA1516024BBD1CB0059B10A /* PBXTargetDependency */,
+			);
+			name = VoiceChangerTests;
+			productName = VoiceChangerTests;
+			productReference = 5AA1515E24BBD1CB0059B10A /* VoiceChangerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5AA1516824BBD1CB0059B10A /* VoiceChangerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5AA1517824BBD1CB0059B10A /* Build configuration list for PBXNativeTarget "VoiceChangerUITests" */;
+			buildPhases = (
+				85C63CF64340124DE91A02C4 /* [CP] Check Pods Manifest.lock */,
+				5AA1516524BBD1CB0059B10A /* Sources */,
+				5AA1516624BBD1CB0059B10A /* Frameworks */,
+				5AA1516724BBD1CB0059B10A /* Resources */,
+				5ACD4A24AFA35CADF37F05EF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5AA1516B24BBD1CB0059B10A /* PBXTargetDependency */,
+			);
+			name = VoiceChangerUITests;
+			productName = VoiceChangerUITests;
+			productReference = 5AA1516924BBD1CB0059B10A /* VoiceChangerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5AA1514024BBD1C80059B10A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Myna labs";
+				TargetAttributes = {
+					5AA1514724BBD1C80059B10A = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					5AA1515D24BBD1CB0059B10A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5AA1514724BBD1C80059B10A;
+					};
+					5AA1516824BBD1CB0059B10A = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 5AA1514724BBD1C80059B10A;
+					};
+				};
+			};
+			buildConfigurationList = 5AA1514324BBD1C80059B10A /* Build configuration list for PBXProject "VoiceChanger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5AA1513F24BBD1C80059B10A;
+			productRefGroup = 5AA1514924BBD1C80059B10A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5AA1514724BBD1C80059B10A /* VoiceChanger */,
+				5AA1515D24BBD1CB0059B10A /* VoiceChangerTests */,
+				5AA1516824BBD1CB0059B10A /* VoiceChangerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AA1514624BBD1C80059B10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA1515824BBD1CB0059B10A /* LaunchScreen.storyboard in Resources */,
+				5AA1518524BBE6380059B10A /* PermisionViewController.xib in Resources */,
+				5AA1515524BBD1CB0059B10A /* Assets.xcassets in Resources */,
+				5AA1519924BC3AD40059B10A /* ResultViewController.xib in Resources */,
+				5A5B2E2224BC508D003EAEFB /* FilterCollectionViewCell.xib in Resources */,
+				5AA1515324BBD1C80059B10A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1515C24BBD1CB0059B10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1516724BBD1CB0059B10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E4C8250BC0FD3D854497E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceChanger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A50AA2457B4691942B03B0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceChanger/Pods-VoiceChanger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceChanger/Pods-VoiceChanger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoiceChanger/Pods-VoiceChanger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ACD4A24AFA35CADF37F05EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceChanger-VoiceChangerUITests/Pods-VoiceChanger-VoiceChangerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VoiceChanger-VoiceChangerUITests/Pods-VoiceChanger-VoiceChangerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VoiceChanger-VoiceChangerUITests/Pods-VoiceChanger-VoiceChangerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C63CF64340124DE91A02C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceChanger-VoiceChangerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE8D3BEF378A309BD9A92D9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VoiceChangerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5AA1514424BBD1C80059B10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5B2E3024BCB4C7003EAEFB /* ApplyFilter.swift in Sources */,
+				5A5B2E3F24BCB8A6003EAEFB /* CopyVideoAsset.swift in Sources */,
+				5A5B2E4124BCBC33003EAEFB /* Utils.swift in Sources */,
+				5A5B2E4324BCBC96003EAEFB /* VideoManager.swift in Sources */,
+				5AA1518C24BBE96A0059B10A /* Permissions.swift in Sources */,
+				5AA1518A24BBE6E10059B10A /* Storyboards.swift in Sources */,
+				5AA1515024BBD1C80059B10A /* VideoRecorderViewController.swift in Sources */,
+				5A5B2E1924BC472D003EAEFB /* PlayerView.swift in Sources */,
+				5A5B2E3724BCB720003EAEFB /* UseCase.swift in Sources */,
+				5AA1519124BC34720059B10A /* AVAsset+Audio.swift in Sources */,
+				5A5B2E2B24BC6208003EAEFB /* SnappingCollectionViewDelegateFlowLayout.swift in Sources */,
+				5A5B2E1D24BC4787003EAEFB /* PlayerContract.swift in Sources */,
+				5A5B2E3B24BCB7D1003EAEFB /* SaveAsset.swift in Sources */,
+				5A5B2E2124BC508D003EAEFB /* FilterCollectionViewCell.swift in Sources */,
+				5AA1518424BBE6380059B10A /* PermisionViewController.swift in Sources */,
+				5AA1514C24BBD1C80059B10A /* AppDelegate.swift in Sources */,
+				5A5B2E3524BCB664003EAEFB /* MergeAudioAndVideo.swift in Sources */,
+				5AA1518F24BC057E0059B10A /* ProgressView.swift in Sources */,
+				5AA1518824BBE6AE0059B10A /* UIViewController+Storyboard.swift in Sources */,
+				5AA1514E24BBD1C80059B10A /* SceneDelegate.swift in Sources */,
+				5A5B2E2424BC5720003EAEFB /* FilterItem.swift in Sources */,
+				5A5B2E3324BCB614003EAEFB /* Constants.swift in Sources */,
+				5A5B2E3D24BCB827003EAEFB /* RemoveAudioFileFromVideo.swift in Sources */,
+				5AA1519324BC38D40059B10A /* UIView+Anchor.swift in Sources */,
+				5A5B2E2624BC585D003EAEFB /* FilterViewManager.swift in Sources */,
+				5A5B2E2D24BC6256003EAEFB /* UICollectionViewCell+Nib.swift in Sources */,
+				5AA1519824BC3AD40059B10A /* ResultViewController.swift in Sources */,
+				5A5B2E3924BCB745003EAEFB /* DomainError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1515A24BBD1CB0059B10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA1516324BBD1CB0059B10A /* VoiceChangerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5AA1516524BBD1CB0059B10A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5AA1516E24BBD1CB0059B10A /* VoiceChangerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5AA1516024BBD1CB0059B10A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA1514724BBD1C80059B10A /* VoiceChanger */;
+			targetProxy = 5AA1515F24BBD1CB0059B10A /* PBXContainerItemProxy */;
+		};
+		5AA1516B24BBD1CB0059B10A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AA1514724BBD1C80059B10A /* VoiceChanger */;
+			targetProxy = 5AA1516A24BBD1CB0059B10A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5AA1515124BBD1C80059B10A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AA1515224BBD1C80059B10A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5AA1515624BBD1CB0059B10A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AA1515724BBD1CB0059B10A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5AA1517024BBD1CB0059B10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5AA1517124BBD1CB0059B10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5AA1517324BBD1CB0059B10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05D424A2076D5DC7EDB8329 /* Pods-VoiceChanger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764W7G7Y88;
+				INFOPLIST_FILE = VoiceChanger/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimzfresh.VoiceChanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5AA1517424BBD1CB0059B10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB3A37609AB3F7874E2FB3AF /* Pods-VoiceChanger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764W7G7Y88;
+				INFOPLIST_FILE = VoiceChanger/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimzfresh.VoiceChanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5AA1517624BBD1CB0059B10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2767460FFA5E5FEC177F2D7C /* Pods-VoiceChangerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764W7G7Y88;
+				INFOPLIST_FILE = VoiceChangerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimzfresh.VoiceChangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceChanger.app/VoiceChanger";
+			};
+			name = Debug;
+		};
+		5AA1517724BBD1CB0059B10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920D45001A0C6C3D8E3FDF73 /* Pods-VoiceChangerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764W7G7Y88;
+				INFOPLIST_FILE = VoiceChangerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimzfresh.VoiceChangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceChanger.app/VoiceChanger";
+			};
+			name = Release;
+		};
+		5AA1517924BBD1CB0059B10A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594C9149DAE40749BFBD77B9 /* Pods-VoiceChanger-VoiceChangerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764W7G7Y88;
+				INFOPLIST_FILE = VoiceChangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimzfresh.VoiceChangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceChanger;
+			};
+			name = Debug;
+		};
+		5AA1517A24BBD1CB0059B10A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94807F0EF6C827DBBE0D6AAD /* Pods-VoiceChanger-VoiceChangerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 764W7G7Y88;
+				INFOPLIST_FILE = VoiceChangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dimzfresh.VoiceChangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VoiceChanger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AA1514324BBD1C80059B10A /* Build configuration list for PBXProject "VoiceChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA1517024BBD1CB0059B10A /* Debug */,
+				5AA1517124BBD1CB0059B10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA1517224BBD1CB0059B10A /* Build configuration list for PBXNativeTarget "VoiceChanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA1517324BBD1CB0059B10A /* Debug */,
+				5AA1517424BBD1CB0059B10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA1517524BBD1CB0059B10A /* Build configuration list for PBXNativeTarget "VoiceChangerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA1517624BBD1CB0059B10A /* Debug */,
+				5AA1517724BBD1CB0059B10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5AA1517824BBD1CB0059B10A /* Build configuration list for PBXNativeTarget "VoiceChangerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AA1517924BBD1CB0059B10A /* Debug */,
+				5AA1517A24BBD1CB0059B10A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5AA1514024BBD1C80059B10A /* Project object */;
+}

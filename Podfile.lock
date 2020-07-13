@@ -1,0 +1,28 @@
+PODS:
+  - AudioKit/Core (4.10.1)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+
+DEPENDENCIES:
+  - AudioKit/Core
+  - PromiseKit
+
+SPEC REPOS:
+  trunk:
+    - AudioKit
+    - PromiseKit
+
+SPEC CHECKSUMS:
+  AudioKit: b8e508a0af3dc7d53caf0ca1002b187a662f949e
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+
+PODFILE CHECKSUM: 616a1bd1815d26623375f1dabb450de6043c4882
+
+COCOAPODS: 1.9.1

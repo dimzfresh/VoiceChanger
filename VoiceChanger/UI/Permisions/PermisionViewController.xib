@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PermisionViewController" customModule="VoiceChanger" customModuleProvider="target">
+            <connections>
+                <outlet property="audioPermissionButton" destination="4ED-sh-0xS" id="Sit-Xx-kPv"/>
+                <outlet property="audioPermissionFlagImageView" destination="RbY-sd-GOt" id="EcF-pA-4Ft"/>
+                <outlet property="cameraPermissionButton" destination="8nH-a5-ULD" id="U2W-74-icr"/>
+                <outlet property="cameraPermissionFlagImageView" destination="MbX-lK-QeQ" id="4pk-kV-l7S"/>
+                <outlet property="photosPermissionButton" destination="jh7-kn-oFs" id="Buw-4Y-Qph"/>
+                <outlet property="photosPermissionFlagImageView" destination="5jj-xS-wCD" id="D7j-ck-tii"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p14-KU-JGB">
+                    <rect key="frame" x="16" y="68" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="rHb-YS-qyP"/>
+                        <constraint firstAttribute="height" constant="44" id="urg-6Q-tP6"/>
+                    </constraints>
+                    <state key="normal" image="close_button"/>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="8ms-yB-roU"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="t4T-Mb-btb">
+                    <rect key="frame" x="24" y="356" width="366" height="144"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Vu-UN-6Nn">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="32"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_flag" translatesAutoresizingMaskIntoConstraints="NO" id="MbX-lK-QeQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="32"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nH-a5-ULD">
+                                    <rect key="frame" x="32" y="0.0" width="334" height="32"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="Разрешить записывать видео">
+                                        <color key="titleColor" red="0.31764705882352939" green="0.40392156862745099" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cameraPermissionButtonTapped:" destination="-1" eventType="touchUpInside" id="egQ-nc-i0O"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qjG-mL-jmo">
+                            <rect key="frame" x="0.0" y="56" width="366" height="32"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_flag" translatesAutoresizingMaskIntoConstraints="NO" id="5jj-xS-wCD">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="32"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jh7-kn-oFs">
+                                    <rect key="frame" x="32" y="0.0" width="334" height="32"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="Разрешить использовать ваши видео">
+                                        <color key="titleColor" red="0.31764705882352939" green="0.40392156862745099" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="photosPermissionButtonTapped:" destination="-1" eventType="touchUpInside" id="C1X-Ei-Yjk"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UrI-qv-kL5">
+                            <rect key="frame" x="0.0" y="112" width="366" height="32"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_flag" translatesAutoresizingMaskIntoConstraints="NO" id="RbY-sd-GOt">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="32"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ED-sh-0xS">
+                                    <rect key="frame" x="32" y="0.0" width="334" height="32"/>
+                                    <accessibility key="accessibilityConfiguration">
+                                        <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                    </accessibility>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <state key="normal" title="Разрешить доступ к микрофону">
+                                        <color key="titleColor" red="0.31764705879999999" green="0.4039215686" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="audioPermissionButtonTapped:" destination="-1" eventType="touchUpInside" id="Bpm-zG-LPB"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="t4T-Mb-btb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="7u2-pl-tYL"/>
+                <constraint firstItem="p14-KU-JGB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="A1e-tU-HUQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t4T-Mb-btb" secondAttribute="trailing" constant="24" id="Bdh-n7-rA5"/>
+                <constraint firstItem="t4T-Mb-btb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-20" id="Or9-Wx-rmH"/>
+                <constraint firstItem="t4T-Mb-btb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dOe-MC-ZOm"/>
+                <constraint firstItem="p14-KU-JGB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="oXA-kw-yiU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="check_flag" width="24" height="24"/>
+        <image name="close_button" width="24" height="24"/>
+    </resources>
+</document>
